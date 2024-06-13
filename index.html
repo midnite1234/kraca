@@ -1,0 +1,841 @@
+
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+  <title>Лидеры красоты</title>
+  <meta name="description" content="Лидеры красоты" />
+  <meta name="keywords" content="Лидеры красоты" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="https://d.stat01.com/d548364/favicon.ico?design=techno" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://d.stat01.com/d548364/favicon.ico?design=techno" type="image/x-icon" />
+  
+	<meta property="og:title" content="Лидеры красоты">
+	<meta property="og:image" content="/design/logo.png">
+	<meta property="og:url" content="https://kraca.ru/">
+	<meta property="og:site_name" content='Лидеры красоты'>
+	<meta property="og:type" content="website">
+  <meta property="og:description" content="Лидеры красоты">  
+  
+    
+  
+  <link rel="stylesheet" type="text/css" href="/design/fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  
+  
+  <link rel="stylesheet" href="https://d.stat01.com/d548364/forall.css?lc=1715175698" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://d.stat01.com/d548364/main.css?design=techno&lc=1715175698">
+  
+  <script  src="https://d.stat01.com/d548364/forall.js?lc=1715175698"></script>
+  <script  src="https://d.stat01.com/d548364/main.js?design=techno&lc=1715175698"></script>
+  
+    
+  
+    
+  <script >$(function () { $('.wrapper').removeClass('nojs'); });</script>
+  
+  
+    
+    
+    
+    <script >
+    // Анимация перед загружаемым слайдером
+    $(window).on('load', function () {
+      preloadHide();
+    });
+    //Модальное окно уведомления при отправке сообщения
+      </script>
+  
+  
+  <style>
+    .nojs .preloader{animation:fadeOut 0.5s ease-out;animation-delay:2s;animation-fill-mode:forwards;}
+    @keyframes fadeOut{from{opacity:1}to{opacity:0;visibility:hidden;}}.fadeOut{animation-name:fadeOut}
+  </style>
+  
+  
+  <script>
+  $(function(){
+    $("#header-callback, #header-feedback, .header-feedback-one").fancybox({
+      'hideOnContentClick': true,
+      'title': false,
+      padding: 0,
+      maxWidth: 500,
+      autoHeight: true,
+  		openMethod: 'slidebottomIn',
+  		closeMethod: 'slidebottomOut'      
+    });    
+  })
+  </script>
+      <script src="https://telegram.org/js/telegram-web-app.js"></script>
+      <script>
+        function initTelegramLogin() {
+          const tg = window.Telegram.WebApp;
+          tg.ready();
+          const user = tg.initDataUnsafe.user;
+    
+          if (user) {
+            fetch('/api/register_telegram_user', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                telegram_id: user.id,
+                username: user.username,
+                first_name: user.first_name,
+                last_name: user.last_name,
+              }),
+            })
+            .then(response => response.json())
+            .then(data => {
+              if (data.success) {
+                console.log('User registered successfully');
+              } else {
+                console.error('User registration failed', data.error);
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+          } else {
+            console.error('No Telegram user data available');
+          }
+        }
+    
+        window.addEventListener('load', initTelegramLogin);
+      </script>
+</head>
+<body>
+  <div class="wrapper  nojs">
+    
+    <noscript>
+      <div class="noscript"> 
+        <div class="noscript-inner"> 
+          <h4><strong>Мы заметили, что у Вас выключен JavaScript.</strong></h4>
+          <h5>Необходимо включить его для корректной работы сайта.</h5>
+        </div> 
+      </div>
+    </noscript>
+    
+    
+    
+    <div class="banner-top" style="display:none">
+      <div class="container">
+        <div class="banner-top-wrapper">
+          <div class="banner-top-icon">
+            <i class="fal fa-info" aria-hidden="true"></i>
+          </div>
+          <div class="banner-top-content">
+            <strong class="banner-top-title">Заголовок уведомления</strong>
+            <div class="banner-top-text">Здесь может быть Ваш текст уведомления со <a class="pseudo-link" href="#">ссылкой</a></div>
+          </div>
+        </div>
+      </div>
+      <button class="banner-top-closeBtn" type="button">Закрыть</button>
+    </div>
+    
+    
+    <header class="header">
+      <div class="header-top">
+        
+        <div class="header-icons clearfix">
+          <span class="header-iconsItem fal fa-ellipsis-v" type="button" data-target="#headerNav" role="button"></span>
+          <span class="header-iconsItem fal fa-search" type="button" data-target="#headerSearch" role="button"></span>
+          <a class="header-iconsItem header-feedback-one fal fa-envelope"  href="#fancybox-feedback" ></a>
+          <span class="header-iconsItem fal fa-user-circle" type="button" data-target="#headerLogin" role="button"></span>
+        </div>
+        
+        <div class="container">
+            <div class="header-top-wrapper">
+            
+            <ul class="header-nav unstyled">
+                <li class="header-navItem">
+                  
+                  <a id="header-feedback" class="header-navLink" href="#fancybox-feedback"><span class="fal fa-envelope"></span> Напишите нам</a>
+                  <div id="fancybox-feedback" style="display:none">
+                    <div class="fancybox-header" style="background-image: url(https://d.stat01.com/d548364/callback-bg.jpg?lc=1715175698)">
+                      <strong class="title">Обратная связь</strong>
+                      <p class="promoText">Задайте вопрос или опишите проблему. Будем рады отзывам и предложениям!</p>                      
+                    </div>
+                    <div class="fancybox-body">
+                      <form method="post" action="https://kraca.ru/feedback" class="feedbackForm-header" enctype="multipart/form-data">
+                        <input type="hidden" name="hash" value="47faf2b1" />
+                        <input class="callbackredirect" type="hidden" name="return_to" value="https://kraca.ru/feedback"/>
+                        
+                        <div style="width:0px;height:0px;overflow:hidden;position:absolute;top:0px;"><input autocomplete="off" type="text" name="form[d6d9e18d83ea894997e0ee6259faa71f]" value="" /><input autocomplete="off" type="text" name="form[f2caaf7147d9521207c192ee37b1b268]" /><script type="text/javascript">try{(function () {var n = 0;var h = function() {if(n) { return true; } else { n = 1; }var Q = document.getElementsByTagName("input");var N = Q.length, o='5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'I'/* 2236 //*/+/*/20ee9c3//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'3'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'G'/* 2236 //*/+/*/20ee9c3//*/'1'/* 15e //*/+/*//be1db18/*/'7'/* 2236 //*/+/*/20ee9c3//*/'9'/* 2077a */+'L'/* fa2 //*/+/*//*/'1'+/* 5287b946 */'8'+'5'+/* 5287b946 */'H'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 5287b946 */'4'+/* 5287b946 */'M'+/* 5287b946 */'1'/* 90ebb */+'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'/* fa2 //*/+/*//*/'Y'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'2'+'2'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'C'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'7'+/* 5287b946 */'2'/* 2077a */+'', q='5'/* 15e //*/+/*//be1db18/*/'2'/* 15e //*/+/*//be1db18/*/'I'+/* 76ff64d2 */'1'+/* e0b0cdf39 */'3'/* f3b3a7 //*//*//*/+/*//e900fb/*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'L'/* 15e //*/+/*//be1db18/*/'L'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'7'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'9'/* f617992 //*//**/+/*//4219337ee/*/'8'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'H'+'1'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'9'+/* 5287b946 */'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'M'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* 5287b946 */'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'Y'/* 2236 //*/+/*/20ee9c3//*/'2'/* f617992 //*//**/+/*//4219337ee/*/'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* f3b3a7 //*//*//*/+/*//e900fb/*/'C'+'1'/* f617992 //*//**/+/*//4219337ee/*/'7'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2077a */+'';for(var O=0; O < N; O++) {if(Q[O].name == "form"+"["+'f'+/* 5287b946 */'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'+/* 76ff64d2 */'a'+/* 76ff64d2 */'a'/* 9dc56c478 */+'f'/* 9dc56c478 */+'1'/* 9dc56c478 */+'7'/* fa2 //*/+/*//*/'7'/* 9dc56c478 */+'1'/* 2077a */+'9'+'b'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'5'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2236 //*/+/*/20ee9c3//*/'1'/* 90ebb */+'2'/* 9dc56c478 */+'0'/* f617992 //*//**/+/*//4219337ee/*/'4'/* 9dc56c478 */+'c'/* 90ebb */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'e'/* 90ebb */+'e'+/* e0b0cdf39 */'3'/* 90ebb */+'7'+/* e0b0cdf39 */'d'/* fa2 //*/+/*//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'b'+/* 76ff64d2 */'2'+/* 5287b946 */'6'/* 2077a */+'8'/* f3b3a7 //*//*//*/+/*//e900fb/*/''+"]") {Q[O].value = q;} if(Q[O].name == "f"+"orm"+"["+'f'+/* e0b0cdf39 */'2'+'c'/* f617992 //*//**/+/*//4219337ee/*/'a'/* 9dc56c478 */+'a'/* f3b3a7 //*//*//*/+/*//e900fb/*/'f'/* f617992 //*//**/+/*//4219337ee/*/'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'d'+'7'/* f617992 //*//**/+/*//4219337ee/*/'2'/* 15e //*/+/*//be1db18/*/'1'/* 90ebb */+'e'/* 2077a */+'5'/* 90ebb */+'2'/* 2077a */+'1'/* 9dc56c478 */+'7'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 15e //*/+/*//be1db18/*/'4'+/* e0b0cdf39 */'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* fa2 //*/+/*//*/'2'/* 15e //*/+/*//be1db18/*/'9'+/* 76ff64d2 */'e'/* fa2 //*/+/*//*/'3'+/* 5287b946 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 9dc56c478 */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'b'+'2'/* 90ebb */+'6'/* 15e //*/+/*//be1db18/*/'8'+/* 5287b946 */''+"]") {Q[O].value = N;} if(Q[O].name == "form"+"["+'f'+/* e0b0cdf39 */'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'a'/* 2236 //*/+/*/20ee9c3//*/'a'/* 2236 //*/+/*/20ee9c3//*/'f'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'1'+/* 76ff64d2 */'4'/* 90ebb */+'7'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'d'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'1'+'2'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 9dc56c478 */+'7'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'/* f617992 //*//**/+/*//4219337ee/*/'1'/* 9dc56c478 */+'9'+/* 5287b946 */'2'/* fa2 //*/+/*//*/'e'/* f3b3a7 //*//*//*/+/*//e900fb/*/'e'/* 2077a */+'3'+/* 76ff64d2 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 2077a */+'1'/* 90ebb */+'b'/* 90ebb */+'2'/* 9dc56c478 */+'6'/* f617992 //*//**/+/*//4219337ee/*/'8'/* fa2 //*/+/*//*/''+"]") {Q[O].value = o;} }};var j = (function() {var div;function standardHookEvent(element, eventName, handler) {element.addEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.attachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {h();return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.addEventListener) {div = undefined;return standardHookEvent;}if (div.attachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var f = (function() {var div;function standardHookEvent(element, eventName, handler) {element.removeEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.detachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.removeEventListener) {div = undefined;return standardHookEvent;}if (div.detachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var E = function () {f(window, "click", E);f(window, "mousemove", E);f(window, "mouseout", E);f(window, "scroll", E);f(window, "mousedown", E);f(window, "mouseover", E);f(window, "contextmenu", E);f(window, "keydown", E);f(window, "touchcancel", E);f(window, "touchmove", E);f(window, "keyup", E);f(window, "mouseup", E);f(window, "touchstart", E);f(window, "touchend", E);h();};setTimeout(function() {j(window, "click", E);j(window, "mousemove", E);j(window, "mouseout", E);j(window, "scroll", E);j(window, "mousedown", E);j(window, "mouseover", E);j(window, "contextmenu", E);j(window, "keydown", E);j(window, "touchcancel", E);j(window, "touchmove", E);j(window, "keyup", E);j(window, "mouseup", E);j(window, "touchstart", E);j(window, "touchend", E);}, 5);}());}catch(e){console.log("Can`t set right value for js field. Please contact with us.");}</script><textarea autocomplete="off" type="text" name="form[b5759eb33011db42bf3126b016f5ddb3]" value="" ></textarea><input autocomplete="off" type="text" name="form[151a811807044531b87bf5b6bffedf75]" value="" /></div>
+                        <div class="callback-input">
+                          <label for="feedback_name" class="callback-label required">Представьтесь, пожалуйста: <em>*</em></label>
+                          <input id="feedback_name" placeholder="Представьтесь, пожалуйста" type="text" name="form[bcba9ea2bfde538d01ff6bc82a659178]"  value="" maxlength="50"  class="input required">
+                        </div>                        
+                        <div class="callback-input">
+                          <label for="feedback_email" class="callback-label required">Электронная почта: <em>*</em></label>
+                          <input id="feedback_email" placeholder="Электронная почта" type="text"  name="form[0257df966d1e6ac0251402812952553c]"  value="" maxlength="255" class="input required email">                          
+                        </div>
+                        <div class="callback-input">
+                          <label for="feedback_phone" class="callback-label required">Телефон: </label>
+                          <input id="feedback_phone" placeholder="Телефон" type="text" name="form[Телефон]"  value="" maxlength="50"  class="input">
+                        </div>
+                        <div class="callback-input">
+                          <label for="feedback_message" class="callback-label required">Текст сообщения: <em>*</em></label>
+                          <textarea id="feedback_message" placeholder="Текст сообщения" rows="4" name="form[e3c7387c015b1d5fc5595c8be162b1ae]" class="input required"></textarea>
+                        </div>
+                        <div class="callback-input">
+                          <label for="feedback_file" class="callback-label">Прикрепить файл</label>
+                          <div class="input-box">
+                            <input id="feedback_file" type="file" name="form[assets_file]"  class="input">
+                          </div>                          
+                        </div>                      
+                        <button type="submit" title="Отправить" class="callback-btn button button3">Отправить</button>
+                        <div class="pp">Нажимая на кнопку Отправить,Вы соглашаетесь с <a href="#">правилами обработки данных</a></div>
+                      </form>
+                    </div>
+                  </div>                  
+                </li>
+                                <li class="header-navItem">
+                  <a class="header-top-email header-navLink" href="mailto:test@gmail.com"><span class="fal fa-envelope"></span> test@gmail.com</a>
+                </li>
+                 
+                                              </ul>
+            
+      
+            
+            <div class="_header-mobile header-login " id="headerLogin">
+                            <div class="header-loginMenu">
+                <div class="header-loginList">
+                  <a class="header-loginLink" href="https://kraca.ru/user/login" title="Вход в личный кабинет" rel="nofollow">                
+    									<span class="fal fa-user"></span>
+    									<span class="pseudo-link">Вход</span>
+          				</a>
+                  <span class="header-span-or">или</span>
+                  <a class="header-loginLink" href="https://kraca.ru/user/register" title="Регистрация" rel="nofollow">
+                      <span class="pseudo-link">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+                            
+            </div>
+            
+            </div>
+        </div>
+      </div>
+      
+      <div class="header-main">
+        <div class="container">
+          <div class="row">
+            
+              
+              <div class="header-logo col-lg-2 col-md-3 col-xs-6">
+									<a href="https://kraca.ru/" title="Лидеры красоты">
+									  <img class="header-logoImg" src="https://d.stat01.com/d548364/logo.png?lc=1715175698" alt="Лидеры красоты">
+									 </a>
+							</div>
+							
+							
+							
+              <div class="header-search _header-mobile col-lg-4 col-md-4" id="headerSearch">
+                  <div class="search">
+                    <form id="search_mini_form" class="search-form" action="https://kraca.ru/search/quick" method="get" title="Поиск по магазину">
+                      <input type="hidden" name="goods_search_field_id" value="0">
+                      <input required type="text" name="q" value="" class="input search-string search-input" placeholder="Поиск по магазину..." autocomplete="off">
+                      <button type="reset" title="Очистить" class="search-reset">
+                        <span class="header-searchIcon"><i class="fal fa-times"></i></span>
+                      </button>
+                      <button type="submit" title="Искать" class="search-submit">
+                        <span class="header-searchIcon"><i class="fal fa-search"></i></span>
+                      </button>
+                    </form>
+                    <div id="search-result" style="display: none;">
+                      <div class="inner">
+                        <div class="result-category"></div>
+                        <div class="result-goods"></div>
+                      </div>
+                    </div>                    
+                  </div>  
+              </div>	
+              
+              
+              
+              <div class="header-contacts _header-mobile col-lg-3 col-md-3" id="headerPhone">
+                
+  							  
+  							    							  <a class="header-phoneNum" href="tel:+7999123456">
+  							    +7(999)123456
+  							  </a>
+  							    							  
+  							    							  
+  							    							  
+  								<a id="header-callback" class="header-phoneCallback pseudo-link" href="#fancybox-callback" title="Перезвоните мне">Перезвоните мне</a>
+                  <div id="fancybox-callback" style="display:none">
+                    <div class="fancybox-header" style="background-image: url(https://d.stat01.com/d548364/callback-bg.jpg?lc=1715175698)">
+                      <strong class="title">Обратный звонок</strong>
+                      <p class="promoText">Мы перезвоним Вам в ближайшее время</p>                      
+                    </div>
+                    <div class="fancybox-body">
+                      <form method="post" action="https://kraca.ru/callback" class="callbackForm" enctype="multipart/form-data">
+                        <input type="hidden" name="hash" value="47faf2b1" />
+                        <input class="callbackredirect" type="hidden" name="return_to" value="https://kraca.ru/callback"/>
+                        
+                        <div style="width:0px;height:0px;overflow:hidden;position:absolute;top:0px;"><input autocomplete="off" type="text" name="form[d6d9e18d83ea894997e0ee6259faa71f]" value="" /><input autocomplete="off" type="text" name="form[f2caaf7147d9521207c192ee37b1b268]" /><script type="text/javascript">try{(function () {var n = 0;var h = function() {if(n) { return true; } else { n = 1; }var Q = document.getElementsByTagName("input");var N = Q.length, o='5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'I'/* 2236 //*/+/*/20ee9c3//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'3'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'G'/* 2236 //*/+/*/20ee9c3//*/'1'/* 15e //*/+/*//be1db18/*/'7'/* 2236 //*/+/*/20ee9c3//*/'9'/* 2077a */+'L'/* fa2 //*/+/*//*/'1'+/* 5287b946 */'8'+'5'+/* 5287b946 */'H'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 5287b946 */'4'+/* 5287b946 */'M'+/* 5287b946 */'1'/* 90ebb */+'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'/* fa2 //*/+/*//*/'Y'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'2'+'2'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'C'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'7'+/* 5287b946 */'2'/* 2077a */+'', q='5'/* 15e //*/+/*//be1db18/*/'2'/* 15e //*/+/*//be1db18/*/'I'+/* 76ff64d2 */'1'+/* e0b0cdf39 */'3'/* f3b3a7 //*//*//*/+/*//e900fb/*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'L'/* 15e //*/+/*//be1db18/*/'L'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'7'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'9'/* f617992 //*//**/+/*//4219337ee/*/'8'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'H'+'1'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'9'+/* 5287b946 */'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'M'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* 5287b946 */'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'Y'/* 2236 //*/+/*/20ee9c3//*/'2'/* f617992 //*//**/+/*//4219337ee/*/'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* f3b3a7 //*//*//*/+/*//e900fb/*/'C'+'1'/* f617992 //*//**/+/*//4219337ee/*/'7'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2077a */+'';for(var O=0; O < N; O++) {if(Q[O].name == "form"+"["+'f'+/* 5287b946 */'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'+/* 76ff64d2 */'a'+/* 76ff64d2 */'a'/* 9dc56c478 */+'f'/* 9dc56c478 */+'1'/* 9dc56c478 */+'7'/* fa2 //*/+/*//*/'7'/* 9dc56c478 */+'1'/* 2077a */+'9'+'b'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'5'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2236 //*/+/*/20ee9c3//*/'1'/* 90ebb */+'2'/* 9dc56c478 */+'0'/* f617992 //*//**/+/*//4219337ee/*/'4'/* 9dc56c478 */+'c'/* 90ebb */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'e'/* 90ebb */+'e'+/* e0b0cdf39 */'3'/* 90ebb */+'7'+/* e0b0cdf39 */'d'/* fa2 //*/+/*//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'b'+/* 76ff64d2 */'2'+/* 5287b946 */'6'/* 2077a */+'8'/* f3b3a7 //*//*//*/+/*//e900fb/*/''+"]") {Q[O].value = q;} if(Q[O].name == "f"+"orm"+"["+'f'+/* e0b0cdf39 */'2'+'c'/* f617992 //*//**/+/*//4219337ee/*/'a'/* 9dc56c478 */+'a'/* f3b3a7 //*//*//*/+/*//e900fb/*/'f'/* f617992 //*//**/+/*//4219337ee/*/'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'d'+'7'/* f617992 //*//**/+/*//4219337ee/*/'2'/* 15e //*/+/*//be1db18/*/'1'/* 90ebb */+'e'/* 2077a */+'5'/* 90ebb */+'2'/* 2077a */+'1'/* 9dc56c478 */+'7'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 15e //*/+/*//be1db18/*/'4'+/* e0b0cdf39 */'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* fa2 //*/+/*//*/'2'/* 15e //*/+/*//be1db18/*/'9'+/* 76ff64d2 */'e'/* fa2 //*/+/*//*/'3'+/* 5287b946 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 9dc56c478 */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'b'+'2'/* 90ebb */+'6'/* 15e //*/+/*//be1db18/*/'8'+/* 5287b946 */''+"]") {Q[O].value = N;} if(Q[O].name == "form"+"["+'f'+/* e0b0cdf39 */'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'a'/* 2236 //*/+/*/20ee9c3//*/'a'/* 2236 //*/+/*/20ee9c3//*/'f'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'1'+/* 76ff64d2 */'4'/* 90ebb */+'7'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'d'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'1'+'2'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 9dc56c478 */+'7'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'/* f617992 //*//**/+/*//4219337ee/*/'1'/* 9dc56c478 */+'9'+/* 5287b946 */'2'/* fa2 //*/+/*//*/'e'/* f3b3a7 //*//*//*/+/*//e900fb/*/'e'/* 2077a */+'3'+/* 76ff64d2 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 2077a */+'1'/* 90ebb */+'b'/* 90ebb */+'2'/* 9dc56c478 */+'6'/* f617992 //*//**/+/*//4219337ee/*/'8'/* fa2 //*/+/*//*/''+"]") {Q[O].value = o;} }};var j = (function() {var div;function standardHookEvent(element, eventName, handler) {element.addEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.attachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {h();return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.addEventListener) {div = undefined;return standardHookEvent;}if (div.attachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var f = (function() {var div;function standardHookEvent(element, eventName, handler) {element.removeEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.detachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.removeEventListener) {div = undefined;return standardHookEvent;}if (div.detachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var E = function () {f(window, "click", E);f(window, "mousemove", E);f(window, "mouseout", E);f(window, "scroll", E);f(window, "mousedown", E);f(window, "mouseover", E);f(window, "contextmenu", E);f(window, "keydown", E);f(window, "touchcancel", E);f(window, "touchmove", E);f(window, "keyup", E);f(window, "mouseup", E);f(window, "touchstart", E);f(window, "touchend", E);h();};setTimeout(function() {j(window, "click", E);j(window, "mousemove", E);j(window, "mouseout", E);j(window, "scroll", E);j(window, "mousedown", E);j(window, "mouseover", E);j(window, "contextmenu", E);j(window, "keydown", E);j(window, "touchcancel", E);j(window, "touchmove", E);j(window, "keyup", E);j(window, "mouseup", E);j(window, "touchstart", E);j(window, "touchend", E);}, 5);}());}catch(e){console.log("Can`t set right value for js field. Please contact with us.");}</script><textarea autocomplete="off" type="text" name="form[b5759eb33011db42bf3126b016f5ddb3]" value="" ></textarea><input autocomplete="off" type="text" name="form[151a811807044531b87bf5b6bffedf75]" value="" /></div>
+                        <div class="callback-input">
+                          <label class="callback-label required" for="callback_person_header">Ваше имя <em>*</em></label>
+                          <input id="callback_person_header" class="input callback_person required" type="text" name="form[94dd5f6c09ef3713ccde6e8bb8a18887]" value="" placeholder="Ваше имя" maxlength="50" title="Представьтесь, пожалуйста" autocomplete="off">
+                        </div>
+                        <div class="callback-input">
+                          <label class="callback-label required" for="callback_phone_header">Номер телефона <em>*</em></label>
+                          <input id="callback_phone_header" class="input callback_phone required" type="text" name="form[d3d9cdd0f2d6d96bd0989cfac788fa49]" value="" placeholder="Номер телефона" maxlength="50" title="Введите номер телефона" autocomplete="off">
+                        </div>
+                        <div class="callback-input">
+                          <label class="callback-label" for="callback_comment_header">Комментарий</label>
+                          <textarea id="callback_comment_header" class="input textarea" rows="7" name="form[6943c0557c50ee5bc1bc2affefdeee72]" placeholder="Ваш комментарий"></textarea>
+                        </div>                      
+                        <button type="submit" title="Отправить" class="callback-btn button button3">Отправить</button>
+                        <div class="pp">Нажимая на кнопку Отправить, Вы соглашаетесь с <a href="#">правилами обработки данных</a></div>
+                      </form>
+                    </div>
+                  </div>  	
+                  
+                  
+                  <div class="header-phoneSub">с 10:00 до 19:00</div>  			
+                  
+  						</div>  
+  						
+  						
+  						
+  						<div class="header-tools col-lg-3 col-md-2 col-xs-6">
+  						  
+                <div class="header-toolsCol">
+                  <div class="favorites ">
+                    <a class="header-toolsLink title" href="https://kraca.ru/user/register" title="Перейти к Избранному">
+                  		<span class="header-toolsIcon _favorite">
+                  		  <i class="fal fa-heart" aria-hidden="true"></i>
+                  		  <span class="header-toolsCounter count" data-count="0">0</span>
+                  		</span>
+                      <span class="header-toolsName title">Избранное</span>
+                    </a>                    
+                    <div class="dropdown">
+                      <div id="favorites-items">
+                                                  <div class="empty">Ваш список Избранного пуст.<br/> Вы можете добавлять товары из <a href="https://kraca.ru/catalog" title="Перейти в каталог">Рейтинг</a> после <a href="https://kraca.ru/user/register" title="Перейти к авторизации">авторизации</a>.</div>
+                          <ul class="favorites-items-list"></ul>
+                                                <div class="actions" style="display:none">
+                          <a data-href="https://kraca.ru/favorites/truncate" onclick="removeFromFavoritesAll($(this))" class="button _dropdown" title="Очистить список избранного">Очистить</a>
+                          <a href="https://kraca.ru/user/favorites" class="button" title="Перейти к избранному">Избранное</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+                
+                <div class="header-toolsCol">
+                                    <div class="compare ">
+                    <a  href="https://kraca.ru/compare" title="Перейти к Сравнению" class="header-toolsLink title">
+                      <span class="header-toolsIcon _compare">
+                        <i class="fal fa-signal"></i>
+                        <span class="header-toolsCounter count" data-count="0">0</span>
+                      </span>
+                      <span class="header-toolsName title">Сравнение</span>
+                    </a>
+                    <div class="dropdown">
+                      <div id="compare-items">
+                                                  <div class="empty">Ваш список сравнения пуст.<br/> Вы можете добавлять товары из <a href="https://kraca.ru/catalog" title="Перейти в каталог">Рейтинга</a> и сравнивать их между собой.</div>
+                          <ul class="compare-items-list"></ul>
+                                                <div class="actions" style="display:none">
+                          <a data-href="https://kraca.ru/compare/reset" onclick="removeFromCompareAll($(this))"  class="button _dropdown" title="Очистить список сравнения">Очистить</a>
+                          <a href="https://kraca.ru/compare" class="button" title="Перейти к Сравнению">Сравнение</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                                    
+                </div>
+                  
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+  						</div>
+  						
+            
+            
+          </div>
+        </div>
+      </div>      
+      
+      <div class="header-menu">
+        <div class="container">
+          <div class="row no-gutters    ">
+            
+            <div class="header-catalog col-lg-2 col-md-3 col-xs-12">
+              <span class="header-catalogBtn unselectable"><span class="header-catalogIcon fal fa-bars"></span><span>Рейтинг 🏆</span></span>
+              <ul class="header-catalogMenu unstyled">
+                    <li class="header-catalogMenuTitle">
+                      <a href="/catalog">Каталог</a>
+                      <button class="header-closeBtn"><i class="fal fa-times"></i></button>
+                    </li>
+                                                                                                                                            <li  class="header-catalogItem  parent">
+                          <a href="https://kraca.ru/catalog/ratingcourse" class="header-catalogLink " title="Рейтинг обучающих програм">
+                                Рейтинг обучающих програм
+                                <span class="header-arrow header-catalogArrow fal fa-angle-down "></span>                                                              </a>
+                                                
+                                            
+                        
+                                                                                                  <ul class="sub header-subcatalog">
+                                                                          <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Obuchenie-professiyam-s-nulya" class="header-subcatalogTitle " title="Обучение профессиям с нуля">
+                                Обучение профессиям с нуля
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Povyshenie-kvalifikacii" class="header-subcatalogTitle " title="Повышение квалификации">
+                                Повышение квалификации
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Besplatnoe-obuchenie" class="header-subcatalogTitle " title="Бесплатное обучение">
+                                Бесплатное обучение
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Licenzii-diplomy" class="header-subcatalogTitle " title="Лицензии, дипломы">
+                                Лицензии, дипломы
+                                                                                              </a>
+                                                </li>
+                                                
+                                                                  </ul> 
+                                                </li>
+                                                                                          
+                        
+                                                                      <li  class="header-catalogItem  parent">
+                          <a href="https://kraca.ru/catalog/Rejting-masterov-krasoty" class="header-catalogLink " title="Рейтинг мастеров красоты">
+                                Рейтинг мастеров красоты
+                                <span class="header-arrow header-catalogArrow fal fa-angle-down "></span>                                                              </a>
+                                                
+                                            
+                        
+                                                                                                  <ul class="sub header-subcatalog">
+                                                                          <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Vizazhist" class="header-subcatalogTitle " title="Визажист">
+                                Визажист
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Parikmaher-stilist" class="header-subcatalogTitle " title="Парикмахер, стилист">
+                                Парикмахер, стилист
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Nogtevoj-servis" class="header-subcatalogTitle " title="Ногтевой сервис">
+                                Ногтевой сервис
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Depilyaciya-jepilyaciya" class="header-subcatalogTitle " title="Депиляция, эпиляция">
+                                Депиляция, эпиляция
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Kosmetolog" class="header-subcatalogTitle " title="Косметолог">
+                                Косметолог
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Permanentnyj-makiyazh" class="header-subcatalogTitle " title="Перманентный макияж">
+                                Перманентный макияж
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Massazh" class="header-subcatalogTitle " title="Массаж">
+                                Массаж
+                                                                                              </a>
+                                                </li>
+                                                
+                                            
+                        
+                                                                      <li  class="header-subcatalogCol ">
+                          <a href="https://kraca.ru/catalog/Narashhivanie-resnic-leshmejker-brovist" class="header-subcatalogTitle " title="Наращивание ресниц (лэшмейкер, бровист)">
+                                Наращивание ресниц (лэшмейкер, бровист)
+                                                                                              </a>
+                                                </li>
+                                                
+                                                                  </ul> 
+                                                </li>
+                                                                      </ul> 
+                                                                                          
+                        
+                                                          
+              </ul>
+            </div>
+            
+            
+            
+            <div class="header-sections _header-mobile col-lg-10 col-md-9 col-xs-12" id="headerNav">
+                <ul class="header-sectionsList">
+                                                                                  <li class="header-sectionsItem  "><a class="header-sectionsLink" href="https://kraca.ru/"  title="Мы рады видеть Вас!"><span>Главная</span></a></li>
+                                            <li class="header-sectionsItem  "><a class="header-sectionsLink" href="https://kraca.ru/feedback"  title="Связь с администрацией магазина"><span>Правила рейтинга</span></a></li>
+                                            <li class="header-sectionsItem  "><a class="header-sectionsLink" href="https://kraca.ru/feedback"  title="Связь с администрацией магазина"><span>О нас</span></a></li>
+                                            <li class="header-sectionsItem  "><a class="header-sectionsLink" href="https://kraca.ru/catalog"  title="Полный список товаров на сайте"><span>Малевич нейросеть</span></a></li>
+                                            <li class="header-sectionsItem  "><a class="header-sectionsLink" href="https://kraca.ru/user/login"  title="Вход в личный кабинет покупателя"><span>Войти в ЛК</span></a></li>
+                                                                              
+                </ul>
+            </div>            
+          </div>
+        </div>
+      </div>
+      
+      <div class="header-overlay"></div>
+    </header>
+        
+    <div id="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="home"><a itemprop="item" href="https://kraca.ru/" title="Перейти на главную"><span itemprop="name">Главная</span></a><meta itemprop="position" content="1" /></li>
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><strong itemprop="name">Регистрация клиента</strong><meta itemprop="position" content="2" /></li>
+                  
+        </ul>
+      </div>
+    </div>
+    
+        
+    
+        
+    
+                <div id="main">
+        <div class="container">
+          <div class="block-bg">
+          <div class="row no-gutters    ">
+            
+                        
+                        <div class="col-xs-12">
+              <div class="page-content  clearfix">
+              
+              <div id="page-title">
+                                      <div class="block-title"><h1 class="title">Регистрация клиента</h1></div>
+                              
+              </div>
+                              
+                <div class="account row">
+  <div class="col-md-6 col-xs-12 first">
+    <div class="col-account">
+      <form action="https://kraca.ru/user/register" method="post" class="clientForm form">
+        <input type="hidden" name="hash" value="47faf2b1" />
+        
+        <div style="width:0px;height:0px;overflow:hidden;position:absolute;top:0px;"><input autocomplete="off" type="text" name="form[d6d9e18d83ea894997e0ee6259faa71f]" value="" /><input autocomplete="off" type="text" name="form[f2caaf7147d9521207c192ee37b1b268]" /><script type="text/javascript">try{(function () {var n = 0;var h = function() {if(n) { return true; } else { n = 1; }var Q = document.getElementsByTagName("input");var N = Q.length, o='5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'I'/* 2236 //*/+/*/20ee9c3//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'3'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'G'/* 2236 //*/+/*/20ee9c3//*/'1'/* 15e //*/+/*//be1db18/*/'7'/* 2236 //*/+/*/20ee9c3//*/'9'/* 2077a */+'L'/* fa2 //*/+/*//*/'1'+/* 5287b946 */'8'+'5'+/* 5287b946 */'H'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 5287b946 */'4'+/* 5287b946 */'M'+/* 5287b946 */'1'/* 90ebb */+'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'/* fa2 //*/+/*//*/'Y'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'2'+'2'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'C'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'7'+/* 5287b946 */'2'/* 2077a */+'', q='5'/* 15e //*/+/*//be1db18/*/'2'/* 15e //*/+/*//be1db18/*/'I'+/* 76ff64d2 */'1'+/* e0b0cdf39 */'3'/* f3b3a7 //*//*//*/+/*//e900fb/*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'L'/* 15e //*/+/*//be1db18/*/'L'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'7'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'9'/* f617992 //*//**/+/*//4219337ee/*/'8'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'H'+'1'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'9'+/* 5287b946 */'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'M'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* 5287b946 */'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'Y'/* 2236 //*/+/*/20ee9c3//*/'2'/* f617992 //*//**/+/*//4219337ee/*/'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* f3b3a7 //*//*//*/+/*//e900fb/*/'C'+'1'/* f617992 //*//**/+/*//4219337ee/*/'7'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2077a */+'';for(var O=0; O < N; O++) {if(Q[O].name == "form"+"["+'f'+/* 5287b946 */'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'+/* 76ff64d2 */'a'+/* 76ff64d2 */'a'/* 9dc56c478 */+'f'/* 9dc56c478 */+'1'/* 9dc56c478 */+'7'/* fa2 //*/+/*//*/'7'/* 9dc56c478 */+'1'/* 2077a */+'9'+'b'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'5'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2236 //*/+/*/20ee9c3//*/'1'/* 90ebb */+'2'/* 9dc56c478 */+'0'/* f617992 //*//**/+/*//4219337ee/*/'4'/* 9dc56c478 */+'c'/* 90ebb */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'e'/* 90ebb */+'e'+/* e0b0cdf39 */'3'/* 90ebb */+'7'+/* e0b0cdf39 */'d'/* fa2 //*/+/*//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'b'+/* 76ff64d2 */'2'+/* 5287b946 */'6'/* 2077a */+'8'/* f3b3a7 //*//*//*/+/*//e900fb/*/''+"]") {Q[O].value = q;} if(Q[O].name == "f"+"orm"+"["+'f'+/* e0b0cdf39 */'2'+'c'/* f617992 //*//**/+/*//4219337ee/*/'a'/* 9dc56c478 */+'a'/* f3b3a7 //*//*//*/+/*//e900fb/*/'f'/* f617992 //*//**/+/*//4219337ee/*/'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'d'+'7'/* f617992 //*//**/+/*//4219337ee/*/'2'/* 15e //*/+/*//be1db18/*/'1'/* 90ebb */+'e'/* 2077a */+'5'/* 90ebb */+'2'/* 2077a */+'1'/* 9dc56c478 */+'7'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 15e //*/+/*//be1db18/*/'4'+/* e0b0cdf39 */'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* fa2 //*/+/*//*/'2'/* 15e //*/+/*//be1db18/*/'9'+/* 76ff64d2 */'e'/* fa2 //*/+/*//*/'3'+/* 5287b946 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 9dc56c478 */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'b'+'2'/* 90ebb */+'6'/* 15e //*/+/*//be1db18/*/'8'+/* 5287b946 */''+"]") {Q[O].value = N;} if(Q[O].name == "form"+"["+'f'+/* e0b0cdf39 */'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'a'/* 2236 //*/+/*/20ee9c3//*/'a'/* 2236 //*/+/*/20ee9c3//*/'f'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'1'+/* 76ff64d2 */'4'/* 90ebb */+'7'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'d'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'1'+'2'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 9dc56c478 */+'7'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'/* f617992 //*//**/+/*//4219337ee/*/'1'/* 9dc56c478 */+'9'+/* 5287b946 */'2'/* fa2 //*/+/*//*/'e'/* f3b3a7 //*//*//*/+/*//e900fb/*/'e'/* 2077a */+'3'+/* 76ff64d2 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 2077a */+'1'/* 90ebb */+'b'/* 90ebb */+'2'/* 9dc56c478 */+'6'/* f617992 //*//**/+/*//4219337ee/*/'8'/* fa2 //*/+/*//*/''+"]") {Q[O].value = o;} }};var j = (function() {var div;function standardHookEvent(element, eventName, handler) {element.addEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.attachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {h();return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.addEventListener) {div = undefined;return standardHookEvent;}if (div.attachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var f = (function() {var div;function standardHookEvent(element, eventName, handler) {element.removeEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.detachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.removeEventListener) {div = undefined;return standardHookEvent;}if (div.detachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var E = function () {f(window, "click", E);f(window, "mousemove", E);f(window, "mouseout", E);f(window, "scroll", E);f(window, "mousedown", E);f(window, "mouseover", E);f(window, "contextmenu", E);f(window, "keydown", E);f(window, "touchcancel", E);f(window, "touchmove", E);f(window, "keyup", E);f(window, "mouseup", E);f(window, "touchstart", E);f(window, "touchend", E);h();};setTimeout(function() {j(window, "click", E);j(window, "mousemove", E);j(window, "mouseout", E);j(window, "scroll", E);j(window, "mousedown", E);j(window, "mouseover", E);j(window, "contextmenu", E);j(window, "keydown", E);j(window, "touchcancel", E);j(window, "touchmove", E);j(window, "keyup", E);j(window, "mouseup", E);j(window, "touchstart", E);j(window, "touchend", E);}, 5);}());}catch(e){console.log("Can`t set right value for js field. Please contact with us.");}</script><textarea autocomplete="off" type="text" name="form[b5759eb33011db42bf3126b016f5ddb3]" value="" ></textarea><input autocomplete="off" type="text" name="form[151a811807044531b87bf5b6bffedf75]" value="" /></div>
+        <input type="hidden" name="from" value="https://kraca.ru/user/settings" />
+        <h3>Персональные данные</h3>
+        <div class="form-list">
+          <div class="fields">
+<label for="reg_name" class="required">Введите полное ФИО <em>*</em></label>
+            <input id="reg_name" type="text" name="form[372f73250c657c775ac8703d66a8d829]"  value="" maxlength="100" class="input required">
+          </div>
+          <div class="fields">
+            <label for="sites_client_phone" class="required">Телефон для связи <em>*</em></label>
+            <input id="sites_client_phone" type="text" name="form[293437b6a15ce632dc9e00d1fb541d44]"  value="" maxlength="255" class="input required">
+          </div>
+          <div class="fields">
+            <label for="sites_client_mail" class="required">Электронная почта <em>*</em></label>
+            <input id="sites_client_mail" type="text" name="form[4ab3a9329cdd26b8c7aff44dcf7da6dd]"  value="" maxlength="255" class="input email required">
+          </div>
+          <div class="fields">
+            <label for="sites_client_pass" class="required">Придумайте пароль <em>*</em></label>
+            <div class="input-box">
+              <input id="sites_client_pass" type="password" name="form[010316c49c67b46bb166823bc52561ec]" value="" maxlength="50"  class="input required" onkeyup="checkCapsWarning(event)" onfocus="checkCapsWarning(event)" onblur="removeCapsWarning()"/>
+                              <div class="showPassBlock">
+                  <a href="#" rel="<i class='fal fa-eye-slash' aria-hidden='true'></i>" class="showPass">
+                    <i class="fal fa-eye" aria-hidden="true"></i>
+                  </a>
+                </div>
+                              <div id="caps_lock"> 
+                  <span class="fal fa-warning"></span>
+                  <strong>Caps Lock включен.</strong>
+                </div>              
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="pp">Нажимая на кнопку Зарегистрироваться, <br/>Вы соглашаетесь с <a href="#">правилами обработки данных</a></div>
+          <button type="submit" title="Зарегистрироваться" class="button">Зарегистрироваться</button>
+          <p class="required"><em>*</em> Обязательные поля</p>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-6 col-xs-12 second">
+    <div class="col-account">
+      <h3>Ваш аккаунт</h3>
+      <p>Если Вы уже имеете аккаунт у нас, пожалуйста, входите.<br/>Если Вы забыли пароль, воспользуйтесь формой восстановления.</p>
+      <div class="buttons">
+        <a href="https://kraca.ru/user/login" class="button">Вход с паролем</a>
+        <a href="https://kraca.ru/user/recovery" class="button">Восстановление пароля</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>document.stat = '{"site_id":"548364","client_id":0,"goods_action":0,"s_ip":1839530380,"s_uri":"https:\/\/kraca.ru\/user\/register","s_referer":null,"s_referer_url":"\/","f_fingerprint":"e3228be98ac3bbb83aaf5cb34b449745","f_user_agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/122.0.0.0 YaBrowser\/24.4.0.0 Safari\/537.36","traffic_source_id":null,"traffic_source_ip":1839530380,"traffic_source_utm_source":null,"traffic_source_utm_medium":null,"traffic_source_utm_campaign":null,"traffic_source_utm_term":null,"traffic_source_utm_content":null,"traffic_source_utm_position":null,"traffic_source_utm_matchtype":null,"traffic_source_utm_placement":null,"traffic_source_utm_network":null,"traffic_source_utm_referer":null,"goods_id":[]}';</script><script type="text/javascript" src="//sl-h-statistics-ch-1.storeland.ru/static/fp.js" async></script>                
+              </div>
+            </div>            
+          </div>
+          </div>
+        </div>
+      </div>
+              
+        
+    
+    
+        
+    
+    
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="block col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            <div class="title"><span>Контакты</span></div>
+            <div class="block-contact" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="KRACA FAMILY"/>
+                            <div><i class="fal fa-clock"></i><p><b>Режим работы</b><br>с 10:00 до 19:00</p></div>              <div itemprop="telephone"><i class="fal fa-phone"></i><p><b>Телефон</b><br><a href="tel:+7999123456">+7(999)123456</a></p></div>                                          <div itemprop="email"><i class="fal fa-envelope"></i><p><b>Email</b><br><a href="mailto:test@gmail.com">test@gmail.com</a></p></div>                          </div>
+          </div>
+                    <div class="block collapse col-lg-3 col-md-2 col-sm-12 col-xs-12">
+            <div class="title"><span>Меню</span><span class="title-navArrow fal fa-angle-down"></span></div>
+            <div class="block-content">
+              <ul class="links unstyled">
+                                                                            <li><a href="https://kraca.ru/catalog"  title="Полный список товаров на сайте">База знаний</a></li>
+                                          <li><a href="https://kraca.ru/page/Доставка"  title="Доставка (Пример страницы)">О нас</a></li>
+                                          <li><a href="https://kraca.ru/page/Доставка"  title="Доставка (Пример страницы)">Нейросеть Малевич</a></li>
+                                          <li><a href="https://kraca.ru/catalog/Besplatnoe-obuchenie"  title="Бесплатное обучение">Бесплатное обучение</a></li>
+                                          <li><a href="https://kraca.ru/catalog/Licenzii-diplomy"  title="Лицензии, дипломы">Лицензии, дипломы</a></li>
+                                          <li><a href="https://kraca.ru/page/Доставка"  title="Доставка (Пример страницы)">Правила размещения</a></li>
+                                          <li><a href="https://kraca.ru/cart"  title="Ваша корзина">Рейтинг мастеров</a></li>
+                                          <li><a href="https://kraca.ru/admin/login"  title="Вход в бэк-офис магазина">Войти в ЛК</a></li>
+                                          <li><a href="https://kraca.ru/feedback"  title="Связь с администрацией магазина">Связь с администрацией</a></li>
+                                                                    </ul>
+            </div>
+          </div>
+                    <div class="block collapse col-lg-3 col-md-2 col-sm-12 col-xs-12">
+            <div class="title"><span>Мой кабинет</span><span class="title-navArrow fal fa-angle-down"></span></div>
+            <div class="block-content">
+              <ul class="links unstyled">
+                                <li><a href="https://kraca.ru/user/login" title="Вход в личный кабинет" rel="nofollow">Вход</a></li>
+                <li><a href="https://kraca.ru/user/register" title="Регистрация" rel="nofollow">Регистрация</a></li>
+                              </ul>
+            </div>
+          </div> 
+          <div class="block col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            <div class="title"><span>Обратный звонок</span></div>
+            <div class="block-content">
+              <p>Заполните форму, и наши специалисты свяжутся с Вами в ближайшее время.</p>
+              <form method="post" action="https://kraca.ru/callback" class="callbackForm" enctype="multipart/form-data">
+                <input type="hidden" name="hash" value="47faf2b1" />
+                <input class="callbackredirect" type="hidden" name="return_to" value="https://kraca.ru/callback"/>
+                
+                <div style="width:0px;height:0px;overflow:hidden;position:absolute;top:0px;"><input autocomplete="off" type="text" name="form[d6d9e18d83ea894997e0ee6259faa71f]" value="" /><input autocomplete="off" type="text" name="form[f2caaf7147d9521207c192ee37b1b268]" /><script type="text/javascript">try{(function () {var n = 0;var h = function() {if(n) { return true; } else { n = 1; }var Q = document.getElementsByTagName("input");var N = Q.length, o='5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'I'/* 2236 //*/+/*/20ee9c3//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'3'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'G'/* 2236 //*/+/*/20ee9c3//*/'1'/* 15e //*/+/*//be1db18/*/'7'/* 2236 //*/+/*/20ee9c3//*/'9'/* 2077a */+'L'/* fa2 //*/+/*//*/'1'+/* 5287b946 */'8'+'5'+/* 5287b946 */'H'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 5287b946 */'4'+/* 5287b946 */'M'+/* 5287b946 */'1'/* 90ebb */+'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'/* fa2 //*/+/*//*/'Y'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'2'+'2'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'C'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'1'/* 2236 //*/+/*/20ee9c3//*/'7'+/* 5287b946 */'2'/* 2077a */+'', q='5'/* 15e //*/+/*//be1db18/*/'2'/* 15e //*/+/*//be1db18/*/'I'+/* 76ff64d2 */'1'+/* e0b0cdf39 */'3'/* f3b3a7 //*//*//*/+/*//e900fb/*/'0'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'L'/* 15e //*/+/*//be1db18/*/'L'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'7'/* 2236 //*/+/*/20ee9c3//*/'9'+/* 76ff64d2 */'9'/* f617992 //*//**/+/*//4219337ee/*/'8'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'H'+'1'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'9'+/* 5287b946 */'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'M'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* 5287b946 */'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'Y'/* 2236 //*/+/*/20ee9c3//*/'2'/* f617992 //*//**/+/*//4219337ee/*/'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* f3b3a7 //*//*//*/+/*//e900fb/*/'C'+'1'/* f617992 //*//**/+/*//4219337ee/*/'7'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2077a */+'';for(var O=0; O < N; O++) {if(Q[O].name == "form"+"["+'f'+/* 5287b946 */'2'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'+/* 76ff64d2 */'a'+/* 76ff64d2 */'a'/* 9dc56c478 */+'f'/* 9dc56c478 */+'1'/* 9dc56c478 */+'7'/* fa2 //*/+/*//*/'7'/* 9dc56c478 */+'1'/* 2077a */+'9'+'b'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'5'/* 2236 //*/+/*/20ee9c3//*/'2'/* 2236 //*/+/*/20ee9c3//*/'1'/* 90ebb */+'2'/* 9dc56c478 */+'0'/* f617992 //*//**/+/*//4219337ee/*/'4'/* 9dc56c478 */+'c'/* 90ebb */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* 15e //*/+/*//be1db18/*/'e'/* 90ebb */+'e'+/* e0b0cdf39 */'3'/* 90ebb */+'7'+/* e0b0cdf39 */'d'/* fa2 //*/+/*//*/'1'/* f3b3a7 //*//*//*/+/*//e900fb/*/'b'+/* 76ff64d2 */'2'+/* 5287b946 */'6'/* 2077a */+'8'/* f3b3a7 //*//*//*/+/*//e900fb/*/''+"]") {Q[O].value = q;} if(Q[O].name == "f"+"orm"+"["+'f'+/* e0b0cdf39 */'2'+'c'/* f617992 //*//**/+/*//4219337ee/*/'a'/* 9dc56c478 */+'a'/* f3b3a7 //*//*//*/+/*//e900fb/*/'f'/* f617992 //*//**/+/*//4219337ee/*/'4'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'d'+'7'/* f617992 //*//**/+/*//4219337ee/*/'2'/* 15e //*/+/*//be1db18/*/'1'/* 90ebb */+'e'/* 2077a */+'5'/* 90ebb */+'2'/* 2077a */+'1'/* 9dc56c478 */+'7'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 15e //*/+/*//be1db18/*/'4'+/* e0b0cdf39 */'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'/* fa2 //*/+/*//*/'2'/* 15e //*/+/*//be1db18/*/'9'+/* 76ff64d2 */'e'/* fa2 //*/+/*//*/'3'+/* 5287b946 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 9dc56c478 */+'1'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'b'+'2'/* 90ebb */+'6'/* 15e //*/+/*//be1db18/*/'8'+/* 5287b946 */''+"]") {Q[O].value = N;} if(Q[O].name == "form"+"["+'f'+/* e0b0cdf39 */'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'c'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'a'/* 2236 //*/+/*/20ee9c3//*/'a'/* 2236 //*/+/*/20ee9c3//*/'f'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'7'+/* e0b0cdf39 */'1'+/* 76ff64d2 */'4'/* 90ebb */+'7'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'d'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'9'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'5'+/* e256a /*c5a156a9*/''/*//*/+/*/+/*/'2'/* f3b3a7 //*//*//*/+/*//e900fb/*/'1'+'2'/* f617992 //*//**/+/*//4219337ee/*/'0'/* 9dc56c478 */+'7'+/* 36bc9b9e/*e3cdd*//*7624 */''/*/*//*/*68b728/*/+/*/+/*6f9cf5f* /*/'c'/* f617992 //*//**/+/*//4219337ee/*/'1'/* 9dc56c478 */+'9'+/* 5287b946 */'2'/* fa2 //*/+/*//*/'e'/* f3b3a7 //*//*//*/+/*//e900fb/*/'e'/* 2077a */+'3'+/* 76ff64d2 */'7'/* 2236 //*/+/*/20ee9c3//*/'b'/* 2077a */+'1'/* 90ebb */+'b'/* 90ebb */+'2'/* 9dc56c478 */+'6'/* f617992 //*//**/+/*//4219337ee/*/'8'/* fa2 //*/+/*//*/''+"]") {Q[O].value = o;} }};var j = (function() {var div;function standardHookEvent(element, eventName, handler) {element.addEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.attachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {h();return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.addEventListener) {div = undefined;return standardHookEvent;}if (div.attachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var f = (function() {var div;function standardHookEvent(element, eventName, handler) {element.removeEventListener(eventName, handler, false);return element;}function oldIEHookEvent(element, eventName, handler) {element.detachEvent("on" + eventName, function(e) {e = e || window.event;e.preventDefault = oldIEPreventDefault;e.stopPropagation = oldIEStopPropagation;handler.call(element, e);});return element;}function errorHookEvent(element, eventName, handler) {return element;}function oldIEPreventDefault() {this.returnValue = false;}function oldIEStopPropagation() {this.cancelBubble = true;}div = document.createElement('div');if (div.removeEventListener) {div = undefined;return standardHookEvent;}if (div.detachEvent) {div = undefined;return oldIEHookEvent;}return errorHookEvent;})();var E = function () {f(window, "click", E);f(window, "mousemove", E);f(window, "mouseout", E);f(window, "scroll", E);f(window, "mousedown", E);f(window, "mouseover", E);f(window, "contextmenu", E);f(window, "keydown", E);f(window, "touchcancel", E);f(window, "touchmove", E);f(window, "keyup", E);f(window, "mouseup", E);f(window, "touchstart", E);f(window, "touchend", E);h();};setTimeout(function() {j(window, "click", E);j(window, "mousemove", E);j(window, "mouseout", E);j(window, "scroll", E);j(window, "mousedown", E);j(window, "mouseover", E);j(window, "contextmenu", E);j(window, "keydown", E);j(window, "touchcancel", E);j(window, "touchmove", E);j(window, "keyup", E);j(window, "mouseup", E);j(window, "touchstart", E);j(window, "touchend", E);}, 5);}());}catch(e){console.log("Can`t set right value for js field. Please contact with us.");}</script><textarea autocomplete="off" type="text" name="form[b5759eb33011db42bf3126b016f5ddb3]" value="" ></textarea><input autocomplete="off" type="text" name="form[151a811807044531b87bf5b6bffedf75]" value="" /></div>
+                <div class="callback-input">
+                  <input id="callback_person" class="input callback_person required" type="text" name="form[94dd5f6c09ef3713ccde6e8bb8a18887]" value="" placeholder="Представьтесь, пожалуйста" maxlength="50" title="Представьтесь, пожалуйста" autocomplete="off">
+                </div>
+                <div class="callback-input">
+                  <input id="callback_phone" class="input callback_phone required" type="text" name="form[d3d9cdd0f2d6d96bd0989cfac788fa49]" value="" placeholder="Введите номер телефона" maxlength="50" title="Введите номер телефона" autocomplete="off">
+                </div>
+                <button type="submit" title="Отправить" class="button">Отправить</button>                    
+                <div class="pp">Нажимая на кнопку Отправить, Вы соглашаетесь с <a href="#">правилами обработки данных</a></div>
+              </form>
+              <div class="social-links">
+                <a style="display:none" class="facebook" href="https://www.facebook.com/" title="FaceBook.com" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i><span>facebook</span></a>
+                <a style="display:none" class="twitter" href="https://twitter.com/" title="Twitter.com" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i><span>twitter</span></a>
+                <a style="display:none" class="whatsapp" href="https://whatsapp.com/" title="Whatsapp.com" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>whatsapp</span></a>
+                <a class="viber" href="https://viber.com/" title="Viber.com" target="_blank"><i class="fab fa-viber" aria-hidden="true"></i><span>viber</span></a>
+                <a class="odnoklassniki" href="https://ok.ru/" title="Odnoklassniki" target="_blank"><i class="fab fa-odnoklassniki" aria-hidden="true"></i><span>odnoklassniki</span></a>
+                <a class="vk" href="https://vk.com/" title="VK.com" target="_blank"><i class="fab fa-vk" aria-hidden="true"></i><span>vk</span></a>
+                <a class="instagram" href="https://instagram.com/" title="Instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><span>instagram</span></a>
+                <a class="youtube" href="https://youtube.com/" title="YouTube.com" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i><span>YouTube</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="fotter-bottom col-xs-12">
+            <div class="copyright col-xs-12 col-md-6">
+              <div>Лидеры красоты &copy; 2024. Все права защищены. </div>
+              <div>KRACA FAMILY.</div>
+              <div></div>
+              <div><!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(97395150, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97395150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            telegram: "dropsupport", // Telegram bot username
+            call_to_action: "Если что я здесь..", // Call to action
+            position: "right", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget --></div>
+            </div>
+            <div class="payments-block col-xs-12 col-md-6">
+              <div id="payment">                   
+                  <a href="#" title="Подробнее о способах оплаты">
+                    <div class="payment-ico sber">
+                      <img src="https://d.stat01.com/d548364/sberbank.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico visa">
+                      <img src="https://d.stat01.com/d548364/visa.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico mastercard">
+                       <img src="https://d.stat01.com/d548364/mastercard.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico yandex">
+                     <img src="https://d.stat01.com/d548364/yandex_dengi.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico yandex">
+                     <img src="https://d.stat01.com/d548364/yandexkassa.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico webmoney">
+                      <img src="https://d.stat01.com/d548364/webmoney.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico walletone">
+                      <img src="https://d.stat01.com/d548364/wallet.svg?lc=1715175698" alt="">
+                    </div>
+                    <div class="payment-ico qiwi">
+                      <img src="https://d.stat01.com/d548364/qiwi.svg?lc=1715175698" alt="">
+                    </div>
+                  </a>
+              </div>             
+            </div>            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="back-top" title="Наверх"><i class="fal fa-angle-up" aria-hidden="true"></i></div>
+    
+    
+    
+    <div id="fancybox-pp" style="display:none">
+      <noindex>
+      <div class="modal">
+        <h2>Политика конфиденциальности</h2>
+        <br/>
+        <div>
+          <h4>Общие положения</h4>
+          <p>Некоторые объекты, размещенные на сайте, являются интеллектуальной собственностью компании "Лидеры красоты". Использование таких объектов установлено действующим законодательством РФ.</p>
+          <p>На сайте "Лидеры красоты" имеются ссылки, позволяющие перейти на другие сайты. Компания "Лидеры красоты" не несет ответственности за сведения, публикуемые на этих сайтах и предоставляет ссылки на них только в целях обеспечения удобства для посетителей своего сайта.</p>
+        </div>
+        <br/>
+        <div>
+          <h4>Личные сведения и безопасность</h4>
+          <p>Компания "Лидеры красоты" гарантирует, что никакая полученная от Вас информация никогда и ни при каких условиях не будет предоставлена третьим лицам, за исключением случаев, предусмотренных действующим законодательством Российской Федерации.</p>
+          <p>В определенных обстоятельствах компания "Лидеры красоты" может попросить Вас зарегистрироваться и предоставить личные сведения. Предоставленная информация используется исключительно в служебных целях, а также для предоставления доступа к специальной информации.</p>
+          <p>Личные сведения можно изменить, обновить или удалить в любое время в разделе "Аккаунт" > "Профиль".</p>
+          <p>Чтобы обеспечить Вас информацией определенного рода, компания "Лидеры красоты" с Вашего явного согласия может присылать на указанный при регистрации адрес электронный почты информационные сообщения. В любой момент Вы можете изменить тематику такой рассылки или отказаться от нее.</p>
+          <p>Как и многие другие сайты, "Лидеры красоты" использует технологию cookie, которая может быть использована для продвижения нашего продукта и измерения эффективности рекламы. Кроме того, с помощь этой технологии "Лидеры красоты" настраивается на работу лично с Вами. В частности без этой технологии невозможна работа с авторизацией в панели управления.</p>
+          <p>Сведения на данном сайте имеют чисто информативный характер, в них могут быть внесены любые изменения без какого-либо предварительного уведомления.</p>
+          <p>Чтобы отказаться от дальнейших коммуникаций с нашей компанией, изменить или удалить свою личную информацию, напишите нам через форму обратной связи</p>
+        </div>
+      </div>
+      </noindex>
+    </div>
+    
+    
+    
+    <div id="fancybox-popup" style="display:none">
+      <div class="popup">
+        <h2 class="popup-title">Модальное окно</h2>
+        <p>Здесь может быть произвольный текст или акция</p>
+        <button class="button" onclick="$.fancybox.close()">Продолжить</button>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+  
+  <div class="overlay"></div>  
+</body> 
+</html>
